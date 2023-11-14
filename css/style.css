@@ -67,7 +67,11 @@ nav{
 .part1 h1, p{
     color: #fff;
 }
-
+.part1 h1{
+    font-size: 70px;
+    position: relative;
+    top: 15rem;
+}
 
 @media (min-width: 0px) and (max-width: 1024px) {
     
