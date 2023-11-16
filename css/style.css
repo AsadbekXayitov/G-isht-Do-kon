@@ -182,9 +182,41 @@ p {
     font-family: inherit;
 }
 
-.part4{
+.part4 {
     background-color: #F4F8FD;
     width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.h1-gray {
+    margin-top: 5rem;
+    margin-left: 6rem;
+    font-size: 40px;
+}
+.h2-gray {
+    color: #4d4d4d;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-left: 9rem;
+}
+.h2-gray span {
+    margin-left: 16rem;
+}
+.purple{
+    color: #2270E2;
+    font-size: 30px;
+    margin: 15px 0;
+}
+.part4 p {
+    color: #4d4d4d;
+}
+.right2-top, .left2-top {
+    border-bottom: 1px solid #4d4d4d;
+}
+.right2-top, .right2-down, .left2-top, .left2-down {
+    width: 45%;
 }
 
 @media (min-width: 0px) and (max-width: 1024px) {}
