@@ -233,7 +233,6 @@ p {
     .links {
         position: absolute;
         top: 15vh;
-        z-index: 9;
         height: 70vh;
         background-color: #fff;
         display: flex;
@@ -249,12 +248,12 @@ p {
         opacity: 0;
         color: #000;
     }
-
+    
     #logo {
         width: 100px;
         height: 100px;
     }
-
+    
     .burger {
         display: block;
     }
