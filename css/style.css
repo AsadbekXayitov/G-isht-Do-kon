@@ -146,7 +146,7 @@ p {
     height: 600px;
 }
 
-.right{
+.right {
     padding-left: 50px;
 }
 
@@ -190,34 +190,96 @@ p {
     grid-column-start: 1;
     grid-column-end: 2;
 }
+
 .h1-gray {
     margin-top: 5rem;
     margin-left: 6rem;
-    font-size: 40px;
+    font-size: 45px;
+    font-weight: 500;
 }
+
 .h2-gray {
     color: #4d4d4d;
     font-weight: 400;
     margin-top: 50px;
     margin-left: 9rem;
 }
+
 .h2-gray span {
     margin-left: 16rem;
 }
-.purple{
+
+.purple {
     color: #2270E2;
     font-size: 30px;
+    font-weight: 400;
     margin: 15px 0;
 }
+
 .part4 p {
     color: #4d4d4d;
+    font-size: 20px;
 }
-.right2-top, .left2-top {
-    border-bottom: 1px solid #4d4d4d;
+
+.right2-top,
+.right2-down,
+.left2-top,
+.left2-down {
+    width: auto;
+    padding: 20px;
 }
-.right2-top, .right2-down, .left2-top, .left2-down {
+
+.df {
+    display: flex;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.right2-top h2,
+.right2-top h1,
+.right2-top p,
+.right2-down h2,
+.right2-down h1,
+.right2-down p,
+.left2-top h2,
+.left2-top h1,
+.left2-top p,
+.left2-down h2,
+.left2-down h1,
+.left2-down p {
+    margin: 10px;
+}
+
+.right2-top h1,
+.right2-down h1,
+.left2-top h1,
+.left2-down h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.right2-top p,
+.right2-down p,
+.left2-top p,
+.left2-down p {
+    font-size: 25px;
+}
+
+.left3{
+    background-image: url(https://gosmartbricks.com/wp-content/uploads/2017/08/aa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 45%;
 }
+
+.rigth3{
+    background-image: url(../img/sklad-transformed.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45%;
+}
+
+
 
 @media (min-width: 0px) and (max-width: 1024px) {}
 
@@ -248,12 +310,12 @@ p {
         opacity: 0;
         color: #000;
     }
-    
+
     #logo {
         width: 100px;
         height: 100px;
     }
-    
+
     .burger {
         display: block;
     }
