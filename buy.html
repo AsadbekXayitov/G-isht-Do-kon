@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eco Bricks</title>
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/buy.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
+
 <body>
-    
+    <nav>
+        <a href="home.html"><img src="./img/logo.jpg" alt="logo" id="logo"></a>
+        <ul class="links">
+            <li><a href="buy.html" id="link1">Buyurtma berish <i class="bi bi-bag-fill"></i></a></li>
+        </ul>
+        <div class="burger">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="left">
+            <img src="./img/g'isht.png" alt="Fasadniy g'isht">
+        </div>
+        <div class="right">
+            <h2 class="first-h2">"Eco Bricks" do'koni</h2>
+            <h1>Fasadniy G'isht</h1>
+            <h2 class="price">standart uchun 3 500 so'm</h2>
+            <p>Fasadniy g'isht klassik va abadiy ko'rinish berish uchun mo'ljallangan va yuqori sifatli materiallardan
+                tayyorlangan. Turli xil rang va o'lchamlarda mavjud bo'lgan ushbu g'ishtlarni boshqarish va o'rnatish
+                oson, bu ularni har qanday qurilish loyihasi uchun amaliy tanlovga aylantiradi.</p>
+            <form onsubmit="return sendtelegram()">
+                <input type="text" placeholder="Ismingizni kiriting" id="ism">
+                <input type="text" placeholder="Familiyangizni kiriting" id="familiya">
+                <input type="number" placeholder="Tel raqamingizni kiriting" id="tel">
+                <input type="text" placeholder="Kerakli rangni kiriting" id="rang">
+                <input type="number" placeholder="G'isht sonini kiriting" id="son">
+                <select class="select">
+                    <option value="standart">standart</option>
+                    <option value="katta">katta</option>
+                    <option value="kichik">kichik</option>
+                </select>
+                <button type="submit" class="btn">Jo'natish</button>
+            </form>
+        </div>
+    </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/script.js"></script>
+
 </html>
