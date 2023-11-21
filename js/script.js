@@ -2,8 +2,18 @@ let burger = document.querySelector(".burger");
 let links = document.querySelector(".links");
 let linksLi = document.querySelectorAll(".links li");
 let container = document.querySelector(".container");
-let div = document.querySelectorAll("div")
-let btn = document.querySelector(".btn")
+let div = document.querySelectorAll("div");
+let btn = document.querySelector(".btn");
+let close = document.querySelector(".close");
+let new_page = document.querySelector(".new_page");
+let loader = document.querySelector(".wrap")
+
+window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+        loader.style.display= "none";
+    }, 1000);
+});
+
 
 burger.addEventListener("click", () =>{
     links.classList.toggle("links-active");
@@ -67,3 +77,12 @@ var sendtelegram = function() {
     document.getElementsByClassName("select").value = "standart";
     return false;
 };
+
+
+btn.addEventListener("click", () => {
+    new_page.classList.add("new_page_toggle")
+});
+
+close.addEventListener("click", () => {
+    new_page.classList.remove("new_page_toggle")
+});

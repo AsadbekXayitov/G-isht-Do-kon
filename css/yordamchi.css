@@ -95,14 +95,10 @@ nav {
 }
 
 #link1,
-#link2 {
+#link2,
+#link3 {
     color: #444;
     text-decoration: none;
-}
-
-#link1:hover ,
-#link2:hover {
-   border-bottom: 3px solid #000;
 }
 
 #line1,
@@ -115,8 +111,6 @@ nav {
     cursor: pointer;
     transition: transform 0.5s linear;
 }
-
-
 
 .burger {
     display: block;
@@ -505,6 +499,10 @@ p {
         width: 100%;
     }
 
+    #logo {
+        right: 7rem;
+    }
+
     .links {
         position: absolute;
         top: 15vh;
@@ -517,30 +515,20 @@ p {
         align-items: center;
         transform: translateX(200%);
     }
-    
+
     .links li {
         margin: 20px 0;
         opacity: 0;
         color: #000;
     }
-    
+
     #logo {
         width: 100px;
         height: 100px;
-        right: 7rem;
     }
 
     .burger {
         display: block;
-    }
-
-    .part1 h1 {
-        font-size: 60px;
-        left: 5rem;
-    }
-
-    .part1 p {
-        left: 5rem;
     }
 }
 

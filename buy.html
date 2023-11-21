@@ -11,9 +11,13 @@
 </head>
 
 <body>
+    <div class="wrap">
+        <span class="loader"></span>
+    </div>
     <nav>
         <a href="home.html"><img src="./img/logo.jpg" alt="logo" id="logo"></a>
         <ul class="links">
+            <li><a href="home.html" id="link2">Bosh sahifa</a></li>
             <li><a href="buy.html" id="link1">Buyurtma berish <i class="bi bi-bag-fill"></i></a></li>
         </ul>
         <div class="burger">
@@ -23,6 +27,10 @@
         </div>
     </nav>
     <div class="container">
+        <div class="new_page">
+            <h1>Muvaffaqiyatli yuborildi✅</h1>
+            <button class="close">Yopish</button>
+        </div>
         <div class="left">
             <img src="./img/g'isht.png" alt="Fasadniy g'isht">
         </div>
@@ -33,7 +41,7 @@
             <p>Fasadniy g'isht klassik va abadiy ko'rinish berish uchun mo'ljallangan va yuqori sifatli materiallardan
                 tayyorlangan. Turli xil rang va o'lchamlarda mavjud bo'lgan ushbu g'ishtlarni boshqarish va o'rnatish
                 oson, bu ularni har qanday qurilish loyihasi uchun amaliy tanlovga aylantiradi.</p>
-            <form onsubmit="return sendtelegram()">
+              <form onsubmit="return sendtelegram()"></form> 
                 <input type="text" placeholder="Ismingizni kiriting" id="ism">
                 <input type="text" placeholder="Familiyangizni kiriting" id="familiya">
                 <input type="number" placeholder="Tel raqamingizni kiriting" id="tel">
