@@ -101,6 +101,11 @@ nav {
     text-decoration: none;
 }
 
+#link1:hover ,
+#link2:hover {
+   border-bottom: 3px solid #000;
+}
+
 #line1,
 #line2,
 #line3 {
@@ -203,7 +208,7 @@ nav {
     align-items: center;
     justify-content: center;
     box-shadow: 2px 2px 2px 2px #00000081;
-    transform: translateY(-200%);
+    transform: translateY(-300%);
 }
 
 .new_page h1 {

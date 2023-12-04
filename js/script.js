@@ -21,14 +21,8 @@ burger.addEventListener("click", () =>{
     linksLi.forEach((link, index) => {
         if (link.style.animation) {
             link.style.animation = "";
-            div.forEach(element => {
-                element.style.filter = "brightness(100%)";
-            });
         } else {
             link.style.animation = `harakat 0.5s ease forwards ${index / 7 + 0.5}s`
-            div.forEach(element => {
-                element.style.filter = "brightness(50%)";
-            });
         }
     });
     burger.classList.toggle("toggle");
