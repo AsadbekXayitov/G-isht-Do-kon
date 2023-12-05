@@ -70,7 +70,6 @@ nav {
     background-color: #fff;
     box-shadow: 0px 2px 0px #0000006f;
     backdrop-filter: blur(3px);
-    position: absolute;
     position: fixed;
     left: 0;
     z-index: 10;
@@ -119,7 +118,6 @@ nav {
 
 
 .burger {
-    display: block;
     width: 25px;
     height: 25px;
     display: none;
@@ -129,7 +127,7 @@ nav {
     position: relative;
     top: 6.2rem;
     right: 0;
-    background-image: url(../img/part1bg.webp);
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/part1bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -156,11 +154,11 @@ p {
     line-height: 1.7rem;
 }
 
-.curtain {
+/* .curtain {
     background-color: #00000051;
     width: 100%;
     height: 100vh;
-}
+} */
 
 .btn-part1 {
     position: relative;
@@ -197,7 +195,7 @@ p {
 .part3 {
     background-color: #F4F8FD;
     width: 100%;
-    padding: 100px;
+    /* padding: 100px; */
     display: flex;
 }
 
@@ -494,13 +492,9 @@ p {
 
 
 
-@media (min-width: 0px) and (max-width: 1024px) {}
+/* @media (min-width: 0px) and (max-width: 1024px) {} */
 
 @media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-
     nav {
         width: 768px;
         height: 150px;
