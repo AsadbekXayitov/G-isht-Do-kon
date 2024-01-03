@@ -41,7 +41,7 @@ var ready = function() {
     tel = document.getElementById("tel").value;
     rang = document.getElementById("rang").value;
     son = document.getElementById("son").value;
-    razmer = document.getElementsByClassName("select").value;
+    razmer = document.getElementsByTagName("option").value;
     message = "Ismi: " + ism + "\nFamiliyasi: " + familiya + "\nTel: " + tel + "\nRang" + rang + "\nSoni" + son + "\nRazmeri" + razmer;
 };
 var sendtelegram = function() {
@@ -63,7 +63,7 @@ var sendtelegram = function() {
     $.ajax(settings).done(function(response) {
         console.log(response);
     });
-    document.getElementById("ism").value = "";
+    document.getElementById("ism").value = "a";
     document.getElementById("familiya").value = "";
     document.getElementById("tel").value = "";
     document.getElementById("rang").value = "";

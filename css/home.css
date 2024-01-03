@@ -7,7 +7,7 @@
     transition: all 400ms;
 }
 
-.wrap{
+.wrap {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -16,7 +16,7 @@
     left: 0;
     align-items: center;
     justify-content: center;
-    z-index: 3;
+    z-index: 11;
     background-color: #4d4d4d;
 }
 
@@ -24,8 +24,10 @@
     position: relative;
     width: 164px;
     height: 164px;
-  }
-  .loader::before , .loader::after {
+}
+
+.loader::before,
+.loader::after {
     content: '';
     position: absolute;
     width: 40px;
@@ -35,27 +37,58 @@
     top: 50%;
     animation: rotate 1s ease-in infinite;
 }
+
 .loader::after {
-  width: 20px;
-  height: 20px;
-  background-color: #FF3D00;
-  animation: rotate 1s ease-in infinite, moveY 1s ease-in infinite ;
+    width: 20px;
+    height: 20px;
+    background-color: #FF3D00;
+    animation: rotate 1s ease-in infinite, moveY 1s ease-in infinite;
 }
 
 @keyframes moveY {
-  0% , 100% {top: 10%}
-  45% , 55% {top: 59%}
-  60% {top: 40%}
+
+    0%,
+    100% {
+        top: 10%
+    }
+
+    45%,
+    55% {
+        top: 59%
+    }
+
+    60% {
+        top: 40%
+    }
 }
+
 @keyframes rotate {
-  0% { transform: translate(-50%, -100%) rotate(0deg) scale(1 , 1)}
-  25%{ transform: translate(-50%, 0%) rotate(180deg) scale(1 , 1)}
-  45% , 55%{ transform: translate(-50%, 100%) rotate(180deg) scale(3 , 0.5)}
-  60%{ transform: translate(-50%, 100%) rotate(180deg) scale(1, 1)}
-  75%{ transform: translate(-50%, 0%) rotate(270deg) scale(1 , 1)}
-  100%{ transform: translate(-50%, -100%) rotate(360deg) scale(1 , 1)}
+    0% {
+        transform: translate(-50%, -100%) rotate(0deg) scale(1, 1)
+    }
+
+    25% {
+        transform: translate(-50%, 0%) rotate(180deg) scale(1, 1)
+    }
+
+    45%,
+    55% {
+        transform: translate(-50%, 100%) rotate(180deg) scale(3, 0.5)
+    }
+
+    60% {
+        transform: translate(-50%, 100%) rotate(180deg) scale(1, 1)
+    }
+
+    75% {
+        transform: translate(-50%, 0%) rotate(270deg) scale(1, 1)
+    }
+
+    100% {
+        transform: translate(-50%, -100%) rotate(360deg) scale(1, 1)
+    }
 }
-    
+
 
 body {
     overflow-x: hidden;
@@ -69,7 +102,6 @@ nav {
     align-items: center;
     background-color: #fff;
     box-shadow: 0px 2px 0px #0000006f;
-    backdrop-filter: blur(3px);
     position: fixed;
     left: 0;
     z-index: 10;
@@ -99,9 +131,9 @@ nav {
     text-decoration: none;
 }
 
-#link1:hover ,
+#link1:hover,
 #link2:hover {
-   border-bottom: 3px solid #000;
+    border-bottom: 3px solid #000;
 }
 
 #line1,
@@ -115,8 +147,6 @@ nav {
     transition: transform 0.5s linear;
 }
 
-
-
 .burger {
     width: 25px;
     height: 25px;
@@ -127,43 +157,35 @@ nav {
     position: relative;
     top: 6.2rem;
     right: 0;
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/part1bg.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/part1bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    padding: 10px;
     height: 100vh;
 }
 
 .part1 h1,
 p {
     color: #fff;
+    padding-left: 100px;
+    padding-top: 55px;
 }
 
 .part1 h1 {
     font-size: 70px;
-    position: relative;
-    top: 8rem;
-    left: 11rem;
 }
 
 .part1 p {
-    position: relative;
-    top: 10.5rem;
-    left: 11rem;
     font-size: 20px;
     line-height: 1.7rem;
 }
 
-/* .curtain {
-    background-color: #00000051;
-    width: 100%;
-    height: 100vh;
-} */
-
 .btn-part1 {
-    position: relative;
-    top: 13.5rem;
-    left: 11rem;
+    display: block;
+    margin-top: 30px;
+    width: max-content;
+    margin-left: 35px;
 }
 
 .umumiy {
@@ -195,21 +217,27 @@ p {
 .part3 {
     background-color: #F4F8FD;
     width: 100%;
-    /* padding: 100px; */
+    padding: 100px;
     display: flex;
 }
 
 .part3 img {
-    width: 600px;
+    width: 100%;
     height: 600px;
 }
 
-.right {
-    padding-left: 50px;
+.part3 .left {
+    width: 50%;
+    padding: 30px;
+}
+
+.part3 .right {
+    width: 50%;
 }
 
 .right-purple {
     color: #2270E2;
+    margin-top: 30px;
     font-weight: 300;
     font-size: 40px;
     font-family: inherit;
@@ -218,9 +246,9 @@ p {
 .right-big-h1 {
     font-size: 50px;
     line-height: 1.2em;
-    margin: 25px 0;
+    margin-top: 20px;
     font-family: inherit;
-    font-weight: 550;
+    font-weight: 500;
 }
 
 .right p {
@@ -228,6 +256,8 @@ p {
     font-size: 22px;
     line-height: 1.5em;
     font-family: inherit;
+    padding: 0;
+    padding-top: 10px;
 }
 
 .right a {
@@ -321,15 +351,24 @@ p {
 .left2-top p,
 .left2-down p {
     font-size: 25px;
+    padding: 0;
 }
 
 .left3 {
-    background-image: url(https://gosmartbricks.com/wp-content/uploads/2017/08/aa.jpg);
+    background-image: url(https://www.kirpich.ru/upload/iblock/fb2/4i38sko3p1e3pplhq8f8shxrxorpk1oz.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 48%;
     height: 101vh;
     margin: 0 40px;
+}
+
+.left3 h1 {
+    text-shadow: 5px 4px 4px #1a1919;
+}
+
+.right3 h1 {
+    text-shadow: 5px 4px 4px #1a1919;
 }
 
 .right3 {
@@ -380,32 +419,32 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 130vh;
+    height: max-content;
 }
 
-.bg-dark h1 {
-    position: relative;
-    top: 20rem;
-    left: 27rem;
+.mission h1 {
+    padding-top: 150px;
     font-size: 5rem;
     color: #fff;
     font-weight: 500;
+    text-align: center;
 }
 
-.bg-dark p {
-    position: relative;
-    top: 23rem;
-    left: 2rem;
+.mission p {
+    padding-top: 60px;
+    padding-left: 2rem;
+    width: 90%;
+    margin: 0px auto;
     font-size: 2rem;
     font-weight: 300;
 }
 
-.bg-dark a {
-    position: relative;
-    top: 28rem;
-    left: 39rem;
+.mission a {
+    display: block;
+    width: max-content;
+    margin: 60px 630px;
     font-size: 1.5rem;
-    padding: 20px 25px;
+    padding: 18px 23px;
 }
 
 .skills {
@@ -494,14 +533,14 @@ p {
 
 /* @media (min-width: 0px) and (max-width: 1024px) {} */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     nav {
-        width: 768px;
-        height: 150px;
+        width: 100%;
+        height: 100px;
     }
 
     .container {
-        width: 768px;
+        width: 100%;
     }
 
     .umumiy {
@@ -521,17 +560,17 @@ p {
         align-items: center;
         transform: translateX(200%);
     }
-    
+
     .links li {
         margin: 20px 0;
         opacity: 0;
         color: #000;
     }
-    
+
     #logo {
-        width: 150px;
-        height: 150px;
-        right: 7rem;
+        width: 100px;
+        height: 100px;
+        right: 3rem;
     }
 
     .burger {
@@ -548,23 +587,20 @@ p {
     }
 
     .part1 {
-        width: 100%;
-        top: 6rem;
+        top: 2rem;
     }
 
     .part1 h1 {
-        font-size: 60px;
-        left: 3rem;
+        padding-top: 80px;
+        font-size: 50px;
+        padding-left: 35px;
     }
 
     .part1 p {
-        left: 3rem;
+        padding-left: 35px;
         font-size: 19px;
     }
 
-    .btn-part1 {
-        left: 3rem;
-    }
 
     .part2 {
         display: block;
@@ -577,6 +613,12 @@ p {
 
     .part3 {
         display: block;
+    }
+
+    .part3 .left,
+    .part3 .right {
+        width: 90%;
+        margin: 0px auto;
     }
 
     .right-purple {
@@ -632,20 +674,18 @@ p {
         top: 20px;
     }
 
-    .bg-dark h1 {
+    .mission h1 {
         font-size: 4rem;
-        left: 10rem;
     }
 
-    .bg-dark p {
-        font-size: 19px;
-        left: 10px;
+    .mission p {
+        font-size: 20px;
     }
 
-    .bg-dark a {
+    .mission a {
         font-size: 1rem;
         padding: 18px 23px;
-        left: 42%;
+        margin: 50px 350px;
     }
 
     .skills {
@@ -680,7 +720,7 @@ p {
 /* js style */
 
 .links-active {
-    transform: translateX(57%);
+    transform: translateX(30%);
 }
 
 @keyframes harakat {
@@ -696,7 +736,7 @@ p {
 }
 
 .toggle #line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-8px, 8px);
 }
 
 .toggle #line2 {
