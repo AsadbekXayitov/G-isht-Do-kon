@@ -9,7 +9,7 @@
 
 .wrap {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     position: fixed;
     top: 0;
@@ -185,7 +185,7 @@ p {
     display: block;
     margin-top: 30px;
     width: max-content;
-    margin-left: 35px;
+    margin-left: 100px;
 }
 
 .umumiy {
@@ -588,6 +588,7 @@ p {
 
     .part1 {
         top: 2rem;
+        width: 100%;
     }
 
     .part1 h1 {
@@ -601,24 +602,35 @@ p {
         font-size: 19px;
     }
 
+    .btn-part1 {
+        margin-left: 37px;
+    }
+
 
     .part2 {
         display: block;
         text-align: center;
+        width: 100%;
     }
-
+    
     #hamkorimiz {
         margin: 20px 0;
     }
-
+    
     .part3 {
         display: block;
+        width: 100%;
     }
 
-    .part3 .left,
+    .part3 .left img {
+        width: 650px;
+        position: relative;
+        left: -80px;
+    }
+
+    .part3 .left ,
     .part3 .right {
-        width: 90%;
-        margin: 0px auto;
+        width: 95%;
     }
 
     .right-purple {
@@ -682,10 +694,13 @@ p {
         font-size: 20px;
     }
 
-    .mission a {
+    .mission .bg-dark a {
         font-size: 1rem;
         padding: 18px 23px;
-        margin: 50px 350px;
+        margin: 0;
+        position: relative;
+        left: 320px;
+        top: 40px;
     }
 
     .skills {
